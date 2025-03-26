@@ -22,17 +22,10 @@ chain =prompt | model
 
 def handle_conversation():
     context = ""
-<<<<<<< HEAD
     print("=================¡Bienvenid@! Soy Icniuh, el asistente virtual de la UAM A. Escribe 'exit' para quitar=================")
     while True:
         user_input = input("You: ")
         if user_input.lower() == "exit":
-=======
-    print("=================¡Bienvenid@! Soy Icniuh, el asistente virtual de la UAM A. Escribe 'adios' para quitar=================")
-    while True:
-        user_input = input("You: ")
-        if user_input.lower() == "adios":
->>>>>>> c581e03e49cb5e52be3ca1110bc75bb542350d63
             break
 
         result = chain.invoke({"datos_negocio":info, "context":context, "question":user_input})

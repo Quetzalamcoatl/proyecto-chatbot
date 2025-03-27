@@ -22,7 +22,7 @@ chain =prompt | model
 
 def handle_conversation():
     context = ""
-    print("=================¡Bienvenid@! Soy Icniuh, el asistente virtual de la UAM A. Escribe 'exit' para quitar=================")
+    print("=================¡Bienvenid@! Soy Icniuh, el asistente de la UAM A. Escribe 'exit' para quitar=================")
     while True:
         user_input = input("You: ")
         if user_input.lower() == "exit":

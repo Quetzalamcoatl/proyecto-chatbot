@@ -20,7 +20,7 @@ model = OllamaLLM(model="Gemma3:latest")
 prompt = ChatPromptTemplate.from_template(template)
 chain =prompt | model 
 
-def handle_conversation():
+def chat():
     context = ""
     print("=================¡Bienvenid@! Soy Icniuh, el asistente de la UAM A. Escribe 'exit' para quitar=================")
     while True:
@@ -34,4 +34,4 @@ def handle_conversation():
 
 
 if __name__ == "__main__":
-    handle_conversation()
+    chat()
